@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Lista de Alunos</h1>
+  <table class="table table-striped">
+    <thead>
+      <th>Matricula</th>
+      <th>Nome</th>
+      <th>Estado Civil</th>
+      <th>Curso</th>
+    </thead>
+      <tbody>
+        <tr *ngFor="let aluno of alunos">
+          <td>{{aluno.matricula}}</td>
+          <td>{{aluno.nome}}</td>
+          <td>{{aluno.estadoCivil}}</td>
+          <td>{{aluno.curso}}</td>
+        </tr>
+      </tbody>
+  </table>
+    <button class="btn btn-primary" (click)="novoAluno()">Novo aluno</button>
+</div>
